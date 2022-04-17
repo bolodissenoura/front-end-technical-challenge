@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from "react";
 import api from './services/api'
 
-function App() {
-
-  const [stores, setStores] = useState([]);
+export default function App() {
+  const [stores, setStores] = useState<any[]>([]);
 
   useEffect(() => {
     api
       .get("/")
       .then((response) => {
-        setStores(response.data);
-        console.log(response.data);
+        setStores(response.data.stores);
       })
       .catch((err) => {
         console.error("ops! ocorreu um erro" + err);
@@ -18,11 +16,17 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <h1>Good luck!</h1>
-      
+    <div className="App">
+      {stores?.map((store, key) => {
+        return (
+          <>
+            <div className="" >
+              <p key={key} >{store.name}</p>
+            </div>
+          </>
+        )
+      })}
+
     </div>
   );
 }
-
-export default App;
