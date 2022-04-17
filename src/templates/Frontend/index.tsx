@@ -1,6 +1,6 @@
 import * as S from './styles';
 import Header from '../../organisms/Header';
-import Home from '../../organisms/Section';
+import Home from '../../organisms/Home';
 
 type FrontendProps = {
     children: React.ReactNode;

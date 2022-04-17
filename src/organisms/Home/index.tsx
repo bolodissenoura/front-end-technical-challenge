@@ -1,17 +1,10 @@
 import { Grid, ListItem } from '@mui/material';
-import InputSeach from '../../atoms/InputSearch';
 import ListMap from '../../molecules/ListMap';
 import * as S from './styles'
 
 const Home = () => {
     return <S.SectionHome>
         <Grid container spacing={3} display="flex" justifyContent="center" alignItems="center">
-            <Grid item xs={6} md={6}>
-                <ListItem><InputSeach /></ListItem>
-            </Grid>
-            <Grid item xs={6} md={6}>
-                <ListItem>Oi</ListItem>
-            </Grid>
             <Grid item xs={6} md={6}>
                 <ListItem><ListMap /></ListItem>
             </Grid>

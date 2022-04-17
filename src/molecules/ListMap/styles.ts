@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const ListSection = styled.div`
     
+    .lt-search{
+        padding-bottom: 10px;
+        
+    }
 
     .lt-principal{
         background-color: gray;
