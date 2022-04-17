@@ -1,5 +1,6 @@
 import * as S from './styles';
 import Header from '../../organisms/Header';
+import Home from '../../organisms/Section';
 
 type FrontendProps = {
     children: React.ReactNode;
@@ -8,12 +9,12 @@ type FrontendProps = {
 const Frontend = ({ children }: FrontendProps) => {
     return (
         <>
-            <S.SectionHome>
+            <S.SectionHeader>
                 <Header></Header>
-            </S.SectionHome>
-            <S.SectionCard>
-                <h1>CARD TEST</h1>
-            </S.SectionCard>
+            </S.SectionHeader>
+            <S.SectionMaps>
+                <Home></Home>
+            </S.SectionMaps>
         </>
     )
 }
