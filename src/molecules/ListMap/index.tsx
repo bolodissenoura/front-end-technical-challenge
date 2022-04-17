@@ -35,7 +35,7 @@ const ListMap = () => {
             label="Pesquisa"
             type="text"
             variant="outlined"
-            onChange={event => { setResult(event.target.value) }}
+            onChange={event => { setResult(event.target.value.toLowerCase()) }}
         />
         <List className="lt-principal">
             {stores?.map((store, key) => {
