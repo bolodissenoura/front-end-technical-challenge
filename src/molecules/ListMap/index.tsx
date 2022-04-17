@@ -25,10 +25,10 @@ const ListMap = () => {
                         <ListItem className="lt-item">
                             <ListItemAvatar>
                                 <Avatar>
-                                    <h1>SP</h1>
+                                    {store.state}
                                 </Avatar>
                             </ListItemAvatar>
-                            <ListItemText primary={store.name} secondary={store.name} />
+                            <ListItemText primary={store.name} secondary={store.revenue} />
                         </ListItem>
                     </>
                 )
