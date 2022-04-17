@@ -8,5 +8,6 @@ export const SectionHome = styled.section`
     margin-top: 50px;
     background-color: #ffffff;
     max-width: 80%;
+    min-height: 80vh;
 
 `
