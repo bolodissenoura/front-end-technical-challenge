@@ -7,7 +7,7 @@ export const SectionHeader = styled.section`
 export const SectionMaps = styled.section`
     height: 100vh;
     background-repeat: no-repeat; 
-    background-color: #313131;
+    background-color: #d8dee9;
     background-size: cover;
 
 `

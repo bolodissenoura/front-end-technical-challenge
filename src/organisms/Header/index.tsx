@@ -4,7 +4,7 @@ import * as S from './styles'
 const Header = () => {
     return <S.Box>
         <>
-            <AppBar position="static">
+            <AppBar position="static" className="appbar">
                 <Toolbar variant="dense">
                     <Typography variant="h5" color="inherit" component="div" className="title">
                         Deempenhos das Lojas

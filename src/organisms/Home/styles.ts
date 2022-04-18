@@ -6,7 +6,7 @@ export const SectionHome = styled.section`
     margin-left: auto;
     margin-right: auto; 
     margin-top: 50px;
-    background-color: #ffffff;
+    background-color: #eceff4;
     max-width: 80%;
     min-height: 80vh;
 
